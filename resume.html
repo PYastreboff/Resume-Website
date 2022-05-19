@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="intro">
+            <h1>Peter Yastreboff</h1>
+            <div class="break"></div>
+            <h3>Digital Interactive Resume</h3>
+            <div class="scroll-down"></div>
+        </div>
+        <div id="info">
+            <div class="sectionTitle">Profile</div>
+            <div class="sectionSubTitle">Who am I? come here to find out!</div>
+            <div class="sectionBreak"></div>
+            <div class="sides">
+                <div class="column rightJust side">
+                    <div class="miniTitle">About Me</div>
+                    <p>I'm currently an interested and motivated student in all things computers and science. I am very structured and ordered, taking pride in attention to detail and will often find myself looking for small mistakes in my work to make sure it is to my best standard.</p>
+                </div>
+                <img class="pfpImg" src="img/pfp.jpg"></img>
+                <div class="column rightJust side">
+                    <div class="miniTitle">Info</div>
+                    <p><b>Name: </b></p>
+                    <p>Peter Yastreboff</p>
+                    <p><b>Age: </b></p>
+                    <p id="age">17</p>
+                    <script>
+                        function calcAge(dateString) {
+                            var birthday = +new Date(dateString);
+                            return ~~((Date.now() - birthday) / (31557600000)); // number is the number of seconds in the required years
+                        }
+                        document.getElementById("age").innerHTML = calcAge("2005-02-14"); // change the age <p> tag to my real age
+                    </script>
+                    <p><b>Location: </b></p>
+                    <p>Sydney, Australia</p>
+                </div>
+            </div>
+        </div>
+        <div id="education">
+            <div class="sectionTitle" style="/*color: rgb(141, 213, 207);*/color: white;">Education</div>
+            <div class="sectionSubTitle" style="color: white;">My Previous/Current Education</div>
+            <div class="sectionBreak" style="background-color: white;"></div>
+            <div class="educations">
+                <div class="column marginBottom marginTop">
+                    <div class="breaker"></div>
+                    <div class="row">
+                        <div class="column schoolName">
+                            <b class="schoolTitle">Turramurra Public School</b>
+                            <p class="schoolDate">Feb 2010 - Dec 2015</p>
+                        </div>
+                        <div class="column">
+                            <p class="schoolInfo">It was at Turramurra Public School where I completed my primary education up until and including year 5.</p>
+                            <p class="schoolLocation">📍 South Turramurra, NSW, Australia</p>
+                        </div>
+                    </div>
+                    <div class="breaker"></div>
+                    <div class="row">
+                        <div class="column schoolName">
+                            <b class="schoolTitle">St. Pius X College Chatswood</b>
+                            <p class="schoolDate">Jan 2016 - Current</p>
+                        </div>
+                        <div class="columm">
+                            <p class="schoolInfo">It is at St. Pius X College that I am currently completing my HSC, I take particular interests in subjects such as Physics, Mathematics, Music and Software Development and often volunteer at extra curricular activities such as Debating and Robotics, coaching the younger generations. Apart from having some of my closest friends here, I also enjoy the massive envolvement in sport culture.</p>
+                            <p class="schoolLocation">📍 Chatswood, NSW, Australia</p>
+                        </div>
+                    </div>
+                    <div class="breaker"></div>
+                </div>
+            </div>
+        </div>
+        <div id="experience">
+            <div class="sectionTitle">Experience</div>
+            <div class="sectionSubTitle">My Current Work Experience</div>
+            <div class="sectionBreak"></div>
+            <div class="breaker"></div>
+            <div class="sectionSubTitle">Currently I have no formal work experience, however I am hoping to change that. For informal coding experience, please scroll down to my Portfolio of Projects.</div>
+            <div class="breakerMid"></div>
+        </div>
+        <div id="skills">
+            <div class="sectionTitle" style="color: white;">Abilities</div>
+            <div class="sectionBreak" style="color: white;"></div>
+            <div class="skillsColumn">
+                <div class="skillSub">Social</div>
+                <div class="skillGroup">
+                    <div class="skill">
+                        <p class="skillInfo">IQ</p>
+                        <div class="starsBox">
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">EQ</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Learning</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Teamwork</p>
+                        <div class="starsBox">
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Confidence</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Attention to Detail</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Listening</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillSub">Technical</div>
+                <div class="skillGroup">
+                    <div class="skill">
+                        <p class="skillInfo">Microsoft Office</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">VSCode</p>
+                        <div class="starsBox">
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">PyScripter</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Windows</p>
+                        <div class="starsBox">
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">MacOS</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Command Line Interface</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">GitHub</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Webkit Browsers</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Notepad++</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Kali Linux</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Adobe Photoshop</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Swift Playgrounds</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">XCode</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillSub">Coding Languages</div>
+                <div class="skillGroup">
+                    <div class="skill">
+                        <p class="skillInfo">Python</p>
+                        <div class="starsBox">
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">PHP</p>
+                        <div class="starsBox">
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">HTML</p>
+                        <div class="starsBox">
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">CSS</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Javascript</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">SQL</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Swift</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Prolog</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                            <p class="star neon">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">Java</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p class="skillInfo">C++</p>
+                        <div class="starsBox">
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star off">★</p>
+                            <p class="star neon flicker">★</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="breaker"></div>
+            </div>
+        </div>
+        </div>
+        <div id="referees">
+            <div class="sectionTitle" style="color: black;">References</div>
+            <div class="sectionBreak" style="color: #666;"></div>
+            <div class="refereesBox">
+                <div class="column marginBottom marginTop">
+                    <div class="breaker"></div>
+                    <div class="row">
+                        <div class="column refereeName">
+                            <b class="refereeTitle">Referee One</b>
+                            <p class="refereeSub">Physics Teacher</p>
+                        </div>
+                        <div class="column">
+                            <p class="refereeComment">I've always put a premium on initiative and willingness to learn among my team members and Peter never failed to deliver on both fronts. An example was when he suggested we create a regular internal meetup where more senior employees could answer questions from other employees about their work. He was the first to take advantage of the knowledge these meetups offered and implemented it in his own work.</p>
+                            <p class="refereeSubComment">Contact: 0427 944 232</p>
+                        </div>
+                    </div>
+                    <div class="breaker"></div>
+                    <div class="row">
+                        <div class="column refereeName">
+                            <b class="refereeTitle">Referee Two</b>
+                            <p class="refereeSub">Principal</p>
+                        </div>
+                        <div class="column">
+                            <p class="refereeComment">I've always put a premium on initiative and willingness to learn among my team members and Peter never failed to deliver on both fronts. An example was when he suggested we create a regular internal meetup where more senior employees could answer questions from other employees about their work. He was the first to take advantage of the knowledge these meetups offered and implemented it in his own work.</p>
+                            <p class="refereeSubComment">Contact: 0475 234 783</p>
+                        </div>
+                    </div>
+                    <div class="breaker"></div>
+                    <div class="row">
+                        <div class="column refereeName">
+                            <b class="refereeTitle">Referee Three</b>
+                            <p class="refereeSub">Soccer Coach</p>
+                        </div>
+                        <div class="column">
+                            <p class="refereeComment">I've always put a premium on initiative and willingness to learn among my team members and Peter never failed to deliver on both fronts. An example was when he suggested we create a regular internal meetup where more senior employees could answer questions from other employees about their work. He was the first to take advantage of the knowledge these meetups offered and implemented it in his own work.</p>
+                            <p class="refereeSubComment">Contact: 0443 342 234</p>
+                        </div>
+                    </div>
+                    <div class="breaker"></div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="sectionTitle" style="color: white;">My Portfolio</div>
+            <div class="sectionSubTitle" style="color: white;">"I'm looking to expand my portfolio while I'm on top and while I'm young."</div>
+            <div class="sectionBreak" style="background-color: white;"></div>
+            <div class="portfolioBox">
+                <a target ="_blank" href="https://apps.apple.com/in/app/sydney-trains-4-number-game/id1543498700"><div id="appNumberGame" class="project">
+                    <div class="link"></div>
+                </div></a>
+                <a target ="_blank" href="https://github.com/PYastreboff/IPT-Major-Project-2022"><div id="iptmajor" class="project">
+                    <div class="link"></div>
+                </div></a>
+                <a target ="_blank" href="https://github.com/PYastreboff/StarWars"><div id="starwars" class="project">
+                    <div class="link"></div>
+                </div></a>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="sectionTitleFooter">Contact</div>
+        <div class="sectionSubTitleFooter">“The universe is a pretty big place. If it's just us, seems like an awful waste of space.”</div>
+        <div class="sectionSubTitleFooter"> - Carl Sagan, Contact</div>
+        <div class="breaker"></div>
+        <div class="sectionBreak"></div>
+        <div class="socialsBox">
+            <a href="https://twitter.com/PeterY03800587" style="min-width: 308px;"><span class="icon twitter"></span></span>https://twitter.com/PeterY03800587</a>
+            <a href="mailto:PYastreboff@gmail.com" style="min-width: 218px;"><span class="icon email"></span>PYastreboff@gmail.com</a>
+        </div>
+        <div class="sectionBreak"></div>
+        <div class="breakerBig"></div> 
+    </footer>
+    <style></style>
+    <script></script>
+</html>
