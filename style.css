@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
 
 * {
     border: 0;
@@ -114,6 +115,23 @@ footer {
   50%  { opacity: 1;  }
   100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
+
+@keyframes flicker2 {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 
+    0 0 4px #fff,
+    0 0 11px #fff,
+    0 0 19px rgb(255, 0, 0),
+    0 0 40px rgb(255, 0, 0),
+    0 0 80px rgba(255, 238, 0, 0);
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
 /*
 @keyframes flicker {
 	40% {
@@ -535,9 +553,41 @@ footer {
 
 .skillSub {
   color: white;
-  font-size: 2.5rem;
-  margin: 1rem 16% .5rem 16%;
+  font-size: 2.8rem;
+  margin: 0rem 16% 0rem 16%;
   text-align: center;
+  font-family: 'Zen Tokyo Zoo';
+  text-transform: capitalize;
+  width: 100%;
+  padding: 1rem 0rem .8rem 0rem;
+}
+
+.broken {
+  animation: flicker2 1.5s infinite alternate;
+  font-family: 'Zen Tokyo Zoo';
+}
+
+.cover {
+  position: relative;
+  color: white;
+  font-size: 2.8rem;
+  text-align: center;
+  font-family: 'Zen Tokyo Zoo';
+  text-transform: capitalize;
+  width: 100%;
+  margin-top: -66px;
+  z-index: 10;
+  font-weight: 100;
+ }
+
+.neonText {
+  text-transform: capitalize;
+  text-shadow: 
+  0 0 4px #fff,
+  0 0 11px #fff,
+  0 0 19px rgb(255, 0, 0),
+  0 0 40px rgb(255, 0, 0),
+  0 0 80px rgba(255, 238, 0, 0);
 }
 
 .column.refereeName {
@@ -1061,7 +1111,24 @@ footer {
     font-size: 2.5rem;
     margin: 1rem 16% .5rem 16%;
     text-align: center;
+    font-weight: 100;
   }
+
+  .cover {
+    position: relative;
+    font-family: 'Zen Tokyo Zoo';
+    text-transform: capitalize;
+    width: 100%;
+    margin-top: calc(-71px - 1rem);
+    z-index: 10;
+    font-weight: 100;
+    color: white;
+    font-size: 2.5rem;
+    margin: -69px 16% .5rem 16%;
+    text-align: center;
+    font-weight: 100;
+   }
+  
   
   .column.refereeName {
     justify-content: flex-start;
