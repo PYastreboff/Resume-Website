@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
 
 * {
     border: 0;
@@ -118,17 +120,19 @@ footer {
 
 @keyframes flicker2 {
     
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  0%, 17%, 23%, 25%, 53%, 58%, 100% {
     text-shadow: 
     0 0 4px #fff,
     0 0 11px #fff,
     0 0 19px rgb(0, 30, 255),
     0 0 40px rgb(0, 30, 255),
     0 0 80px rgba(255, 238, 0, 0);
+    opacity: 1;
   }
   
   20%, 24%, 55% {        
       text-shadow: none;
+      opacity: .2;
   }    
 }
 
@@ -526,10 +530,11 @@ footer {
 
 .skillInfo {
   margin-top: .2rem;
-  font-size: larger;
+  font-size: 1.2rem;
   color: white;
   min-width: 20vw;
   width: 20vw;
+  /*font-family: 'Vibur', cursive;*/
 }
 
 .neon {
@@ -544,7 +549,7 @@ footer {
 }
 
 .off {
-  color: rgb(36, 36, 36);
+  color: rgb(42, 42, 42);,
 }
 
 .flicker {
@@ -575,7 +580,7 @@ footer {
   font-family: 'Zen Tokyo Zoo';
   text-transform: capitalize;
   width: 100%;
-  margin-top: -67px;
+  margin-top: -66px;
   z-index: 10;
   font-weight: 100;
  }
