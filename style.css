@@ -122,8 +122,8 @@ footer {
     text-shadow: 
     0 0 4px #fff,
     0 0 11px #fff,
-    0 0 19px rgb(255, 0, 0),
-    0 0 40px rgb(255, 0, 0),
+    0 0 19px rgb(0, 30, 255),
+    0 0 40px rgb(0, 30, 255),
     0 0 80px rgba(255, 238, 0, 0);
   }
   
@@ -235,7 +235,7 @@ footer {
 
 .sectionSubTitle {
   color: rgb(94, 94, 94);
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: 'Roboto Flex', sans-serif;
   text-align: center;
   margin: .1rem 1rem .1rem 1rem;
@@ -575,7 +575,7 @@ footer {
   font-family: 'Zen Tokyo Zoo';
   text-transform: capitalize;
   width: 100%;
-  margin-top: -66px;
+  margin-top: -67px;
   z-index: 10;
   font-weight: 100;
  }
@@ -585,8 +585,8 @@ footer {
   text-shadow: 
   0 0 4px #fff,
   0 0 11px #fff,
-  0 0 19px rgb(255, 0, 0),
-  0 0 40px rgb(255, 0, 0),
+  0 0 19px rgb(0, 38, 255),
+  0 0 40px rgb(0, 30, 255),
   0 0 80px rgba(255, 238, 0, 0);
 }
 
@@ -613,7 +613,7 @@ footer {
   display: flex;
   width: calc(50vw - (6rem + 4rem));
   height: calc((50vw - (6rem + 4rem))/1.78);
-  transition: filter .4s;
+  transition: filter .2s;
   overflow: hidden;
 }
 
@@ -1152,7 +1152,7 @@ footer {
     display: flex;
     width: 80vw;
     height: calc(80vw/1.78);
-    transition: filter .4s;
+    transition: filter 0.2s;
     overflow: hidden;
   }
   
